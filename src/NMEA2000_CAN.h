@@ -62,7 +62,7 @@
     - https://github.com/ttlappalainen/NMEA2000_Teensyx
     
   ESP32 internal CAN:
-    - https://github.com/ttlappalainen/NMEA2000_esp32
+	- https://github.com/sergei/NMEA2000_esp32_twai
   
   AVR:
     - https://github.com/thomasonw/avr_can
@@ -274,8 +274,8 @@ tNMEA2000 &NMEA2000=*(new tNMEA2000_mbed());
 tmbedStream serStream;
 
 #elif USE_N2K_CAN == USE_N2K_ESP32_CAN
-#include <NMEA2000_esp32.h>       // https://github.com/ttlappalainen/NMEA2000_esp32
-tNMEA2000 &NMEA2000=*(new tNMEA2000_esp32());
+#include <NMEA2000_esp32_twai.h>       // https://github.com/sergei/NMEA2000_esp32_twai
+tNMEA2000 &NMEA2000=*(new NMEA2000_esp32_twai());
 
 #elif USE_N2K_CAN == USE_N2K_ARDUINO_CAN
 #include <NMEA2000_ArduinoCAN.h>
